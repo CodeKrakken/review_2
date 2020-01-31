@@ -4,6 +4,7 @@ class Report
     @red = 0
     @amber = 0
     @green = 0
+    @uncounted = 0
   end
 
   def analyse(report)
@@ -15,9 +16,11 @@ class Report
         @amber += 1
       elsif result == 'Green'
         @green += 1
+      else
+        @uncounted += 1
       end
     end
-    return "Red: #{@red}, Amber: #{@amber}, Green: #{@green}"
+    return "Red: #{@red}, Amber: #{@amber}, Green: #{@green}, Uncounted: #{@uncounted}"
   end
 
 end
