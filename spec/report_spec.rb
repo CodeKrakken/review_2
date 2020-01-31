@@ -18,6 +18,10 @@ describe Report do
   end
 
   it 'returns a count of erroneous results' do
-    expect(subject.analyse('fish,crab,rabbit')).to eq('Red: 0, Amber: 0, Green: 0, Uncounted: 3')
+    expect(subject.analyse('Fish,Crab,Rabbit')).to eq('Red: 0, Amber: 0, Green: 0, Uncounted: 3')
+  end
+
+  it 'returns a complex set of results' do
+    expect(subject.analyse('Red,Red,Amber,Red,Fish,London,White,Green,Green,Green')).to eq('Red: 3, Amber: 1, Green: 3, Uncounted: 3')
   end
 end
