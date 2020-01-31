@@ -1,17 +1,20 @@
 class Report
 
   def initialize
-    @reds = 0
+    @red = 0
+    @amber = 0
   end
 
   def analyse(report)
     split_report = report.split(',')
     split_report.each do |result|
       if result == 'Red'
-        @reds += 1
+        @red += 1
+      elsif result == 'Amber'
+        @amber += 1
       end
     end
-    return "Red: #{@reds}"
+    return "Red: #{@red}, Amber: #{@amber}"
   end
 
 end
