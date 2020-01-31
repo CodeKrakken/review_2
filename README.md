@@ -24,3 +24,9 @@ Compare total of these counts against length of original array
 Difference is Uncounted category
 
 Gather results into string and return
+
+https://vimeo.com/97516288 
+
+https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html 
+
+https://www.youtube.com/watch?v=xPL84vvLwXA
