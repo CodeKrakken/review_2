@@ -14,3 +14,13 @@ Tests - Input single colour, receive it back
       - Input a variety of numbers, get correct count
       - Input edgecases, get count
       - Input full mixture, get correct count
+
+Report analyser methods - 
+
+Receives string
+Split string at commas into array
+Iterate over array, making counts of greens, reds and ambers
+Compare total of these counts against length of original array
+Difference is Uncounted category
+
+Gather results into string and return
